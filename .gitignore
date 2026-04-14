@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Bancos
+*.db
+*.sqlite
+*.sqlite3
+
+# Excel / dados locais
+*.xlsx
+*.xlsm
+*.csv
+
+# Kotlin / Gradle
+.gradle/
+build/
+out/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Sistema
+.DS_Store
+Thumbs.db
