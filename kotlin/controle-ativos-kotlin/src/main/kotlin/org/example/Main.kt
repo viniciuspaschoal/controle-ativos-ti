@@ -1,15 +1,14 @@
 package org.example
 
-import org.example.service.ConsultaService
+import org.example.service.ConsultaRegistroService
 
-fun main(){
+fun main() {
+    val service = ConsultaRegistroService()
 
-    val consultaService = ConsultaService()
-
-    println("=== SISTEMA DE INVENTÁRIO DE TI ===")
+    println("=== SISTEMA DE INVENTARIO DE TI ===")
 
     while (true) {
-        println("\n1 - Consulta")
+        println("\n1 - Consulta e registra")
         println("0 - Sair")
 
         print("Escolha: ")
@@ -17,16 +16,15 @@ fun main(){
 
         when (opcao) {
             "1" -> {
-                print("\nDigite o patrimônio")
+                print("\nDigite o patrimonio: ")
                 val codigo = readln().trim()
-                consultaService.consultarCodigo(codigo)
+                service.consultarERegistrar(codigo)
             }
-
             "0" -> {
                 println("Encerrando...")
                 break
             }
-            else -> println("Opção inválida!")
+            else -> println("Opcao invalida!")
         }
     }
 }
