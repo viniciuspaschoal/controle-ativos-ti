@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     implementation("org.xerial:sqlite-jdbc:3.46.1.3")
+    implementation("org.apache.poi:poi-ooxml:5.2.5")
     testImplementation(kotlin("test"))
 }
 
